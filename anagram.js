@@ -2,14 +2,14 @@
 
 
 function anagram(myStr, myStr2) {
-    var flag = true;
+    let flag = true;
 
-    var myStrArr = myStr.replace(/[^\w]/g,'').split('');
-    var myStr2Arr = myStr2.replace(/[^\w]/g,'').split('');
+    let myStrArr = myStr.replace(/[^\w]/g,'').split('');
+    let myStr2Arr = myStr2.replace(/[^\w]/g,'').split('');
     myStrArr.sort();
     myStr2Arr.sort();
 
-    for (var i = 0; i < myStr2Arr.length; i++) {
+    for (let i = 0; i < myStr2Arr.length; i++) {
         if (myStrArr[i].toLowerCase() != myStr2Arr[i].toLowerCase()) {
             flag = false;
         }
@@ -21,7 +21,7 @@ function anagram(myStr, myStr2) {
     }
 }
 
-var myStr = "akshay is the best";
-var myStr2 = "Askhay si eht sebt";
+let myStr = "akshay is the best";
+let myStr2 = "Askhay si eht sebt";
 
 anagram(myStr, myStr2);
