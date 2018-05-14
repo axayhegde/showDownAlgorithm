@@ -4,8 +4,8 @@
 function anagram(myStr, myStr2) {
     var flag = true;
 
-    var myStrArr = myStr.replace(/ /g,'').split('');
-    var myStr2Arr = myStr2.replace(/ /g,'').split('');
+    var myStrArr = myStr.replace(/[^\w]/g,'').split('');
+    var myStr2Arr = myStr2.replace(/[^\w]/g,'').split('');
     myStrArr.sort();
     myStr2Arr.sort();
 

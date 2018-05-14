@@ -18,4 +18,4 @@ function pyramid(numberOfRows) {
     }
 }
 
-pyramid(7);
+pyramid(6);
