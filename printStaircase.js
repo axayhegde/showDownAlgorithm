@@ -11,6 +11,7 @@ Input Variable : Number of rows
 
 */
 
+/*
 function stairCase(numberOfStairs){
 
     var symbol = "#";
@@ -20,5 +21,24 @@ function stairCase(numberOfStairs){
         console.log("row "+ row + " ----> " + symbol.repeat(row));
     }
 }
+*/
 
-stairCase(7);
+
+//Better approach
+steps(7);
+
+function steps(n){
+    for(let rows = 0; rows < n; rows++){
+        let stair = '';
+        for(let col = 0; col < n; col++){
+            if(col <= rows){
+                stair += '#';
+            }else{
+                stair += '';
+            }
+        }
+        console.log(stair);
+    }
+}
+
+
