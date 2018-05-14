@@ -16,8 +16,8 @@ function stairCase(numberOfStairs){
     var symbol = "#";
     console.log('Number of Stairs  ' + numberOfStairs);
 
-    for(var i=1; i<=numberOfStairs; i++){
-        console.log(symbol.repeat(i));
+    for(var row=1; row <= numberOfStairs; row++){
+        console.log("row "+ row + " ----> " + symbol.repeat(row));
     }
 }
 
