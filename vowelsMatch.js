@@ -21,8 +21,6 @@ function vowelMatch(testString){
     }
     console.log('The number of vowels in the given string are ' + count);
 
-
-
 }
 var testString = 'Hello this is going';
 vowelMatch(testString);
